@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "wishlist-Mech"
+client_id = "01be8c8b30678c1e39a43ec174e6ff0a"
+application_url = "https://swim-return-satisfy-poison.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://swim-return-satisfy-poison.trycloudflare.com/auth/callback",
+  "https://swim-return-satisfy-poison.trycloudflare.com/auth/shopify/callback",
+  "https://swim-return-satisfy-poison.trycloudflare.com/api/auth/callback",
+  "https://swim-return-satisfy-poison.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "pritam-test-store-440.myshopify.com"
